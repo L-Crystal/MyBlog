@@ -1,32 +1,29 @@
 const Koa = require('koa');
-//引入koa-router路由
-const Router = require('@koa/router');
+
 //引入ejs模块引擎
 const views = require('koa-views')
 const path = require('path')
+//引入koa-static静态资源配置
+const staticPath = require('koa-static')
+
+const bodyParser = require('koa-bodyparser')
 
 const app = new Koa();
-const router = new Router();
+
+const router = require('./routes');
+
+// 使用ctx.body解析中间件
+app.use(bodyParser())
 
 // 加载模板引擎
 app.use(views(path.join(__dirname, './views'), {
     extension: 'ejs'
-  }))
+}))
 
-//首页
-router.get('/', async (ctx, next) => {
-    await ctx.render('index');
-});
-
-//登录
-router.get('/login', async(ctx)=>{
-    await ctx.render('login');
-});
-
-//注册
-router.get('/regist', async(ctx)=>{
-    await ctx.render('regist');
-});
+// 配置静态资源目录
+app.use(staticPath(
+    path.join(__dirname, "/public")
+))
 
 app
     .use(router.routes())

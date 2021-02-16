@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
-    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -15,6 +18,22 @@
                 <a href="">注册</a>
             </div>
         </header>
+
+        <div class="login-form">
+            <h3>用户登录</h3>
+            <form action="/login" method="post">
+                <p>
+                    用户名：<input type="text" name="username">
+                </p>
+                <p>
+                    密码：<input type="text" name="password">
+                </p>
+                <p>
+                    <button type="submit" id="btn">登录</button>
+                </p>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>

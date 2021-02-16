@@ -42,9 +42,12 @@
 ## 5.开发流程
     （1）设计views页面
     （2）配置public静态资源文件
-    （3）设计路由
+    （3）设计和配置路由
         （3.1）“/” ：进入index.ejs
         （3.2）“/login” ：进入login.ejs
         （3.3）“/redist” ：进入regist.ejs
+        将路由的代码放置在routes下的index.js模块中，减少app.js中的代码量
+    （4）分解路由
+        （4.1）
 
     

@@ -19,4 +19,8 @@ ul,ol{
 header{
     height: 50px;
     background: #cccccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
 }
