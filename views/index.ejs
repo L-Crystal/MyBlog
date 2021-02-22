@@ -11,13 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="title">MyBlog</div>
-            <div class="login-regist">
-                <a href="">登录</a>/
-                <a href="">注册</a>
-            </div>
-        </header>
+        <%- include('header')%>
         <div class="blog-list">
             <%
                 for(let i=0;i<blogs.length; i++){

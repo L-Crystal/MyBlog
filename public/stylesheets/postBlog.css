@@ -1,0 +1,34 @@
+.post-form{
+    width: 650px;
+    background: #e0dfdf;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* text-align: center; */
+    padding: 20px 0;
+}
+.post-form h3{
+    margin: 20px 0;
+    text-align: center;
+}
+.post-form p{
+    margin: 20px 40px;
+}
+.post-form p input{
+    border: none;
+}
+.post-form p #title{
+    width: 318px;
+    height: 30px;
+}
+.post-form p #content{
+    width: 414px;
+    height: 123px;
+}
+#btn{
+    width: 180px;
+    height: 45px;
+    margin: 58px;
+    font-size: 15px;
+    border: none;
+    background: #E2C3C3;
+}

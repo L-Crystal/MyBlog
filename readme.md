@@ -41,13 +41,26 @@
     （7）npm i mysql :mysql数据库驱动
 ## 5.开发流程
     （1）设计views页面
+        figma原型：https://www.figma.com/file/ud8JbA8HbJgIfhvFCekUoa/MyBlog?node-id=0%3A1&viewport=-32%2C-51%2C0.5
     （2）配置public静态资源文件
     （3）设计和配置路由
         （3.1）“/” ：进入index.ejs
         （3.2）“/login” ：进入login.ejs
         （3.3）“/redist” ：进入regist.ejs
         将路由的代码放置在routes下的index.js模块中，减少app.js中的代码量
-    （4）分解路由
-        （4.1）
+    （4）正式开发
+        （4.1）开发login功能
+            （4.1.1）编写login.ejs页面
+            （4.1.2）编写post方式的/login路由逻辑
+        （4.2）models中的方法命名规范：get查、save增、delete删、update改
+## 6.补充知识
+    （1）redirect和render的区别：
+    redirect是重定向，将页面的地址重新定向到新路由，不能向页面传递数据；
+    render是跳转，不会重定向地址，可以传递数据给页面
+    （2）MVC（Model,View,Controller）
+        （2.1）View：视图文件（用户可见的页面）
+        （2.2）Controller：控制器文件，用来处理业务逻辑的，控制业务流程跳转
+        （2.3）Model：数据模型，（数据库操作相关的文件）
+    （3）session：会话作用域
 
     

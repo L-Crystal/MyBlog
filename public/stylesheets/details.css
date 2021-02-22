@@ -1,0 +1,34 @@
+.blog-box{
+    width: 810px;
+    background: #cccccc;
+    margin: 20px auto;
+    padding: 20px;
+}
+.blog-box h3{
+    margin-bottom: 20px;
+}
+.blog-box span{
+    font-size: 13px;
+}
+.content{
+    width: 552px;
+    background: #e0e0e0;
+    margin: 20px 0;
+    padding: 10px;
+}
+.comment-title{
+    width: 710px;
+    background: #a9afa9;
+    padding: 5px;
+}
+.comment-box{
+    width: 584px;
+    background: #a9afa9;
+    margin-top: 10px;
+    display: fixed;
+    padding: 10px 30px;
+}
+.comment-box span{
+    right: 0;
+    
+}
